@@ -26,3 +26,5 @@ Rodar as migrations para criar o banco de dados com o comando php artisan migrat
 Se o projeto tiver webpack ou vite rodar o comando npm run build
 
 A aplicação será acessável no seu navegador em: http://localhost:8000.
+
+php artisan view teste
