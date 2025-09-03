@@ -36,3 +36,7 @@ Se o projeto tiver webpack ou vite rodar
 A aplicação será acessável no seu navegador em: http://localhost:8000.
 
     php artisan view teste
+
+criar uma nova view: php artisan make:view nome-da-view.
+
+tailwind para estilizar o html
