@@ -39,4 +39,49 @@ A aplicação será acessável no seu navegador em: http://localhost:8000.
 
 criar uma nova view: php artisan make:view nome-da-view.
 
-tailwind para estilizar o html
+# Implementação de Tailwind CSS
+
+Instalar o Tailwind CSS como um plugin do Vite é a maneira mais fácil de integrá-lo com frameworks como Laravel.
+
+Caso não tenha um arquivo Vite, crie-o com o comando
+
+    npm create vite@latest meu-project
+    cd meu-project
+
+Instale o Tailwind CSS
+
+    npm install tailwindcss @tailwindcss/vite
+
+Para configurar o plugin Vite, adicione o plugin @tailwindcss/vite à sua configuração do Vite (vite.config.js)
+
+    import { defineConfig } from 'vite'
+    import tailwindcss from '@tailwindcss/vite'
+    export default defineConfig({
+        plugins: [
+            tailwindcss(),
+        ],
+    })
+
+Importe o Tailwind CSS
+
+    @import "tailwindcss";
+
+Começar a contrução do projeto com 
+
+    npm run dev
+
+Para utilizar Tailwind em seu HTML, inclua seu CSS na tag '<head>' e use as classes do Tailwind para estilizar seu projeto
+
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/src/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+        </h1>
+    </body>
+    </html>
