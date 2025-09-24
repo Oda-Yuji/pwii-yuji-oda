@@ -70,7 +70,7 @@ Começar a contrução do projeto com
 
     npm run dev
 
-Para utilizar Tailwind em seu HTML, inclua seu CSS na tag '<head>' e use as classes do Tailwind para estilizar seu projeto
+Para utilizar Tailwind em seu HTML, inclua seu CSS na tag <head> e use as classes do Tailwind para estilizar seu projeto
 
     <!doctype html>
     <html>
